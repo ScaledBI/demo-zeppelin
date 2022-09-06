@@ -17,3 +17,6 @@
 #
 # [name]  [maven artifact]  [description]
 python          org.apache.zeppelin:zeppelin-python:0.9.0              Python interpreter
+jdbc            org.apache.zeppelin:zeppelin-jdbc:0.9.0                 Jdbc interpreter
+md              org.apache.zeppelin:zeppelin-markdown:0.9.0             Markdown support
+shell           org.apache.zeppelin:zeppelin-shell:0.9.0                Shell command
