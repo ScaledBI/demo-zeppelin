@@ -198,13 +198,13 @@
         },
         "default.user": {
           "name": "default.user",
-          "value": "shinyproxy",
+          "value": "$POSTGRES_USERNAME",
           "type": "string",
           "description": "The JDBC user name"
         },
         "default.password": {
           "name": "default.password",
-          "value": "password",
+          "value": "$POSTGRES_PASSWORD",
           "type": "password",
           "description": "The JDBC user password"
         },
@@ -348,13 +348,13 @@
         },
         "default.user": {
           "name": "default.user",
-          "value": "shinyproxy",
+          "value": "$POSTGRES_USERNAME",
           "type": "string",
           "description": "The JDBC user name"
         },
         "default.password": {
           "name": "default.password",
-          "value": "password",
+          "value": "$POSTGRES_PASSWORD",
           "type": "password",
           "description": "The JDBC user password"
         },
