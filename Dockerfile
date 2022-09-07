@@ -39,9 +39,14 @@ RUN wget https://repo1.maven.org/maven2/org/postgresql/postgresql/42.5.0/postgre
 
 # copy zeppelin config
 COPY conf/interpreter.json conf/interpreter-list conf/zeppelin-site.xml ./conf/
+COPY entrypoint.sh start.sh ./
+COPY notebook ./notebook
 
 # zeppelin runs on port 8080
 EXPOSE 8080
 
+# create credentials
+ENTRYPOINT ["./entrypoint.sh"]
+
 # start zeppelin
-CMD ["bin/zeppelin.sh"]
+CMD ["./start.sh"]

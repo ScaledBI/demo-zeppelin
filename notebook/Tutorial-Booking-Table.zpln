@@ -1,0 +1,178 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n# Tutorial - Booking Table",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-07T20:53:51+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h1>Tutorial - Booking Table</h1>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1662584021177_993012683",
+      "id": "paragraph_1662558543726_94342304",
+      "dateCreated": "2022-09-07T20:53:41+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:224",
+      "dateFinished": "2022-09-07T20:53:55+0000",
+      "dateStarted": "2022-09-07T20:53:51+0000"
+    },
+    {
+      "text": "%md\nLet's have a look at the table in which we save all our bookings.\n\nFirst, we have a look at all the columns that exist.\nYou can do this by executing the following SQL snippet.\n\n``` sql\nSELECT *\nFROM booking\nLIMIT 10\n```\n\nThe result is shown on the right side.",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-07T20:53:55+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>Let&rsquo;s have a look at the table in which we save all our bookings.</p>\n<p>First, we have a look at all the columns that exist.<br/>You can do this by executing the following SQL snippet.</p>\n<pre><code class=\"sql\">SELECT *\nFROM booking\nLIMIT 10\n</code></pre>\n<p>The result is shown on the right side.</p>\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1662584021186_6020775",
+      "id": "paragraph_1662558570351_1298897165",
+      "dateCreated": "2022-09-07T20:53:41+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:225",
+      "dateFinished": "2022-09-07T20:53:55+0000",
+      "dateStarted": "2022-09-07T20:53:55+0000"
+    },
+    {
+      "text": "%sql\nSELECT *\nFROM booking\nLIMIT 10",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-07T20:53:55+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 6,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "editorHide": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "id": "string",
+                      "userid": "string",
+                      "entrytime": "string",
+                      "hotelid": "string",
+                      "price": "string",
+                      "status": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "id\tuserid\tentrytime\thotelid\tprice\tstatus\n1\t1\t2022-09-01 10:05:34\t5\t1206.4\tvalid\n2\t2\t2022-09-01 11:55:19\t2\t2576.43\tvalid\n3\t1\t2022-09-02 21:13:49\t17\t539.76\tcanceled\n4\t3\t2022-09-03 08:52:00\t2\t3108.04\tvalid\n5\t4\t2022-09-03 12:11:15\t2\t2161.61\tvalid\n6\t5\t2022-09-03 23:51:42\t3\t411.82\terror\n7\t5\t2022-09-04 06:13:51\t5\t1241.14\tvalid\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1662584021186_2109725217",
+      "id": "paragraph_1662558602769_278121298",
+      "dateCreated": "2022-09-07T20:53:41+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:226",
+      "dateFinished": "2022-09-07T20:53:58+0000",
+      "dateStarted": "2022-09-07T20:53:55+0000"
+    }
+  ],
+  "name": "Tutorial-Booking-Table",
+  "id": "2HE4R17PC",
+  "defaultInterpreterGroup": "jdbc",
+  "version": "0.9.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Tutorial-Booking-Table"
+}

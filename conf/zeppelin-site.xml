@@ -97,7 +97,7 @@
 
 <property>
   <name>zeppelin.notebook.homescreen</name>
-  <value></value>
+  <value>$ZEPPELIN_NOTEBOOK_HOMESCREEN</value>
   <description>id of notebook to be displayed in homescreen. ex) 2A94M5J1Z Empty value displays default home screen</description>
 </property>
 
